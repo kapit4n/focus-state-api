@@ -3,5 +3,5 @@
 - motivation items related to tasks
 
 # Endpoints
-/tasks
-/tasks:id
+- /tasks
+- /tasks:id
