@@ -12,7 +12,7 @@ func main() {
 	models.ConnectDatabase()
 
 	// create new task
-	models.DB.Create(&models.Task{ID: "1", Title: "Task 001"})
+	models.DB.Create(&models.Task{Title: "Task 001"})
 
 	router := gin.Default()
 	router.GET("/tasks", handlers.GetTasks)
