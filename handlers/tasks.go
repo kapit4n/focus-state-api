@@ -14,6 +14,10 @@ var tasks = []models.Task{
 }
 
 func GetTasks(c *gin.Context) {
+	var tasksFromDB []models.Task
+
+	models.DB.Find(&tasksFromDB)
+
 	c.IndentedJSON(http.StatusOK, tasks)
 }
 
